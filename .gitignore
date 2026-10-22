@@ -1,0 +1,133 @@
+# Environment files: only the reviewed, placeholder-only example may be shared.
+.env
+.env.*
+!.env.example
+.envrc
+
+# Wallets, signing material and local credentials.
+.secrets/
+secrets/
+.wallets/
+wallets/
+keystore/
+keystores/
+.keystore/
+.keystores/
+UTC--*
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+wallet.dat
+wallet.json
+wallet-*.json
+mnemonic.txt
+mnemonic.json
+seed.txt
+seed.json
+seed-phrase.*
+recovery-phrase.*
+private-key.*
+private_key.*
+.git-credentials
+.netrc
+_netrc
+.npmrc
+.pypirc
+.curlrc
+.aws/
+.azure/
+.ssh/
+.gnupg/
+.codex/auth.json
+.codex/config.toml
+
+# Per-machine / local server configuration and session data.
+*.local.json
+*.local.toml
+*.local.yaml
+*.local.yml
+.vscode/settings.json
+.vscode/launch.json
+cookies.txt
+cookies.json
+session.json
+sessions/
+.sessions/
+.server/
+.server-data/
+
+# Keep the audited installation instructions and installer, not local tools.
+/.tools/*
+!/.tools/README.md
+!/.tools/install.ps1
+
+# Foundry compiler output, caches and broadcast/recovery state are regenerable.
+# Public receipts and lab evidence live outside these directories.
+out/
+cache/
+broadcast/
+*.recovery.lock
+.anvil/
+anvil-state*.json
+anvil-state*.json.gz
+anvil-state*.json.zst
+
+# Python, Node and notebook runtime caches.
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+
+# Temporary files and runtime logs.
+*.log
+*.tmp
+*.temp
+*.partial
+*.bak
+*.swp
+*.swo
+*~
+*.pid
+*.pid.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Reviewed lab verification logs are evidence; keep them with the reports.
+!/checks/anvil_attempt.log
+!/checks/artifacts.log
+!/checks/assembler.log
+!/checks/foundry.log
+!/checks/install.log
+!/checks/powershell_parse.log
+!/checks/task1.log
+!/checks/task2_rpc_unit.log
+!/checks/task3.log
+!/checks/task4_final_foundry.log
+!/checks/task4_metamask_integration.log
+!/checks/task4_signer_ui.log
+!/checks/verify.log
+# checks/task4_sepolia_simulation.log stays ignored: local user profile paths.
+
+# Operating-system and editor debris.
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.idea/
+
+# Do not blanket-ignore notebooks, Screens/, checks/*.json, receipts or lab
+# results. Inspect their contents before publishing, including server requestId
+# fields in task4/sepolia_result.json; ignore rules cannot redact file contents.

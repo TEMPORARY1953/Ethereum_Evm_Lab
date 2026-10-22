@@ -1,0 +1,19 @@
+﻿Downloading https://api.github.com/repos/foundry-rs/foundry/releases/tags/v1.8.6
+Downloading https://github.com/foundry-rs/foundry/releases/download/v1.8.6/foundry_v1.8.6_win32_amd64.zip
+SHA-256 verified: foundry_v1.8.6_win32_amd64.zip
+forge Version: 1.8.6
+Commit SHA: 6bad0a66de7c83f7b33695044138f0f5fa4c5990
+Build Timestamp: 2026-10-21T17:38:09.096593000Z (1792604289)
+Build Profile: dist
+cast Version: 1.8.6
+Commit SHA: 6bad0a66de7c83f7b33695044138f0f5fa4c5990
+Build Timestamp: 2026-10-21T17:38:09.096593000Z (1792604289)
+Build Profile: dist
+anvil Version: 1.8.6
+Commit SHA: 6bad0a66de7c83f7b33695044138f0f5fa4c5990
+Build Timestamp: 2026-10-21T17:38:09.096593000Z (1792604289)
+Build Profile: dist
+Downloading https://binaries.soliditylang.org/windows-amd64/solc-windows-amd64-v0.8.28+commit.7893614a.exe
+SHA-256 verified: solc-0.8.28.exe
+solc, the solidity compiler commandline interface
+Version: 0.8.28+commit.7893614a.Windows.msvc

@@ -1,0 +1,9 @@
+﻿test_documented_cases (test_program.ProgramTests.test_documented_cases) ... ok
+test_operand_order_reference (test_program.ProgramTests.test_operand_order_reference) ... ok
+test_plain_mnemonics_and_jump_immediates (test_program.ProgramTests.test_plain_mnemonics_and_jump_immediates) ... ok
+test_randomized_against_independent_integer_reference (test_program.ProgramTests.test_randomized_against_independent_integer_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.297s
+
+OK

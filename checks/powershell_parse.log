@@ -1,0 +1,4 @@
+﻿PASS PowerShell syntax: verify.ps1
+PASS PowerShell syntax: run_local.ps1
+PASS PowerShell syntax: .tools/install.ps1
+PASS PowerShell syntax: task4/scripts/local_demo.ps1

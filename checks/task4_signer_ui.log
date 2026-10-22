@@ -1,0 +1,1 @@
+PASS UI doubles: approval lock, exact one account + chain, step order, mandatory fee preview without signing, tampered value rejection, exact deploy payload, server reservation, duplicate/interrupted-wallet protection, explicit rejection release.

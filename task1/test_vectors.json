@@ -1,0 +1,205 @@
+[
+  {
+    "name": "N=1",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002a",
+    "expected_status": "return",
+    "expected_int": 42,
+    "expected_hex": "0x000000000000000000000000000000000000000000000000000000000000002a"
+  },
+  {
+    "name": "positive numbers",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000001e",
+    "expected_status": "return",
+    "expected_int": 20,
+    "expected_hex": "0x0000000000000000000000000000000000000000000000000000000000000014"
+  },
+  {
+    "name": "negative numbers",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000003fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffafffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7",
+    "expected_status": "return",
+    "expected_int": -6,
+    "expected_hex": "0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffa"
+  },
+  {
+    "name": "mixed signs",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000003fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013",
+    "expected_status": "return",
+    "expected_int": 3,
+    "expected_hex": "0x0000000000000000000000000000000000000000000000000000000000000003"
+  },
+  {
+    "name": "zero elements",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "return",
+    "expected_int": 0,
+    "expected_hex": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "name": "positive fractional average",
+    "calldata": "0x000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000002",
+    "expected_status": "return",
+    "expected_int": 1,
+    "expected_hex": "0x0000000000000000000000000000000000000000000000000000000000000001"
+  },
+  {
+    "name": "negative fractional average",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000002fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe",
+    "expected_status": "return",
+    "expected_int": -1,
+    "expected_hex": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  {
+    "name": "fraction rounded to zero",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000002ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "return",
+    "expected_int": 0,
+    "expected_hex": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "name": "negative N=1",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd6",
+    "expected_status": "return",
+    "expected_int": -42,
+    "expected_hex": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd6"
+  },
+  {
+    "name": "N=1 zero",
+    "calldata": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "return",
+    "expected_int": 0,
+    "expected_hex": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "name": "N=0",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "N=0 with extra value",
+    "calldata": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "negative N",
+    "calldata": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000005",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "missing word",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000a",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "extra word",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000014",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "empty input",
+    "calldata": "0x",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "N without values",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "truncated N",
+    "calldata": "0x01",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "truncated element",
+    "calldata": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "extra byte",
+    "calldata": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002a00",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "huge positive N",
+    "calldata": "0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000001",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "N multiplication wrap attack",
+    "calldata": "0x08000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "N sign bit",
+    "calldata": "0x80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "maximum int256",
+    "calldata": "0x00000000000000000000000000000000000000000000000000000000000000017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "expected_status": "return",
+    "expected_int": 57896044618658097711785492504343953926634992332820282019728792003956564819967,
+    "expected_hex": "0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  {
+    "name": "minimum int256",
+    "calldata": "0x00000000000000000000000000000000000000000000000000000000000000018000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "return",
+    "expected_int": -57896044618658097711785492504343953926634992332820282019728792003956564819968,
+    "expected_hex": "0x8000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "name": "positive sum overflow",
+    "calldata": "0x00000000000000000000000000000000000000000000000000000000000000027fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000001",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "negative sum overflow",
+    "calldata": "0x00000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "overflow before later cancellation",
+    "calldata": "0x00000000000000000000000000000000000000000000000000000000000000037fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "expected_status": "revert",
+    "expected_int": null,
+    "expected_hex": "0x"
+  },
+  {
+    "name": "extremes without overflow",
+    "calldata": "0x000000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000007fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "expected_status": "return",
+    "expected_int": 0,
+    "expected_hex": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  }
+]

@@ -1,0 +1,27 @@
+﻿{
+    "timestamp_utc":  "2026-10-22T11:07:02.0812554Z",
+    "public_transactions_sent":  false,
+    "steps":  [
+                  {
+                      "name":  "install",
+                      "exit_code":  0,
+                      "log":  "checks/install.log",
+                      "status":  "PASS"
+                  },
+                  {
+                      "name":  "verify",
+                      "exit_code":  0,
+                      "log":  "checks/verify.log",
+                      "status":  "PASS"
+                  },
+                  {
+                      "name":  "anvil_attempt",
+                      "exit_code":  0,
+                      "log":  "checks/anvil_attempt.log",
+                      "status":  "PASS",
+                      "missing_tools":  [
+
+                                        ]
+                  }
+              ]
+}

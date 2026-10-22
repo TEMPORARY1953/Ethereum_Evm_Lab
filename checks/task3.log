@@ -1,0 +1,14 @@
+﻿test_bad_addresses (test_encode_message.EncodingTests.test_bad_addresses) ... ok
+test_bad_hashes (test_encode_message.EncodingTests.test_bad_hashes) ... ok
+test_bad_hex (test_encode_message.EncodingTests.test_bad_hex) ... ok
+test_bad_names (test_encode_message.EncodingTests.test_bad_names) ... ok
+test_fields (test_encode_message.EncodingTests.test_fields) ... ok
+test_invalid_utf8 (test_encode_message.EncodingTests.test_invalid_utf8) ... ok
+test_known_bytes (test_encode_message.EncodingTests.test_known_bytes) ... ok
+test_round_trip (test_encode_message.EncodingTests.test_round_trip) ... ok
+test_valid_syntax (test_encode_message.EncodingTests.test_valid_syntax) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

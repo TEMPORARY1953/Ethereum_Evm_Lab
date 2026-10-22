@@ -1,0 +1,37 @@
+﻿[
+    {
+        "name":  "powershell_syntax",
+        "status":  "PASS",
+        "exit_code":  0
+    },
+    {
+        "name":  "task1",
+        "status":  "PASS",
+        "exit_code":  0
+    },
+    {
+        "name":  "task2_rpc_unit",
+        "status":  "PASS",
+        "exit_code":  0
+    },
+    {
+        "name":  "task3",
+        "status":  "PASS",
+        "exit_code":  0
+    },
+    {
+        "name":  "artifacts",
+        "status":  "PASS",
+        "exit_code":  0
+    },
+    {
+        "name":  "assembler",
+        "status":  "PASS",
+        "exit_code":  0
+    },
+    {
+        "name":  "foundry",
+        "status":  "PASS",
+        "exit_code":  0
+    }
+]

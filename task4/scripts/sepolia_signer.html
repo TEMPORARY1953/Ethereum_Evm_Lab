@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Task 4 · Sepolia · VMKRULIT</title><link rel="stylesheet" href="/signer.css">
+<main><p class="eyebrow">ETHEREUM SEPOLIA · 11155111</p><h1>Vmk Rulit Token <span>VMKRULIT</span></h1>
+<p>Подпись в вашем MetaMask. Для каждой операции потребуется отдельное подтверждение.</p>
+<dl><dt>Аккаунт / владелец</dt><dd id="owner"></dd><dt>Получатель 1 VMKRULIT</dt><dd id="recipient"></dd>
+<dt>Количество</dt><dd>1 VMKRULIT = 1000000000000000000 единиц · 18 decimals</dd>
+<dt>ETH Value</dt><dd>0 ETH для каждой операции; оплачивается только gas в Sepolia</dd>
+<dt>Лимит комиссии</dt><dd>До 0.0055 Sepolia ETH суммарно при maxFee 1 gwei. Не повышайте лимиты без пересмотра плана.</dd></dl>
+<p id="approval"></p><button id="connect">Подключить MetaMask</button><p id="account"></p>
+<section><h2>1. Развернуть контракт</h2><p>Существующий LabToken.sol, собранный Foundry. Name: Vmk Rulit Token, Symbol: VMKRULIT.</p>
+<button id="deploy" disabled>Проверить параметры deployment</button><pre id="deployReview"></pre>
+<button id="deploySend" disabled>Параметры проверены — открыть MetaMask для deployment</button><p id="deployStatus"></p></section>
+<section><h2>2. Выпустить 1 VMKRULIT</h2><p>mint(ваш аккаунт, 1000000000000000000)</p>
+<button id="mint" disabled>Проверить параметры mint</button><pre id="mintReview"></pre>
+<button id="mintSend" disabled>Параметры проверены — открыть MetaMask для mint</button><p id="mintStatus"></p></section>
+<section><h2>3. Перевести 1 VMKRULIT</h2><p>transfer(получатель выше, 1000000000000000000)</p>
+<button id="transfer" disabled>Проверить параметры transfer</button><pre id="transferReview"></pre>
+<button id="transferSend" disabled>Параметры проверены — открыть MetaMask для transfer</button><p id="transferStatus"></p></section>
+<button id="verify">Проверить RPC / обновить отчёт</button><p id="contract"></p><pre id="status" role="status"></pre>
+<details><summary>Точные данные транзакций из Foundry</summary><pre id="details"></pre></details>
+<details><summary>Восстановить уже отправленную транзакцию по публичному hash</summary>
+<p>Только transaction hash из истории MetaMask. Восстановление ничего не подписывает и не отправляет.</p>
+<select id="recoverStep"><option value="deploy">Deployment</option><option value="mint">Mint</option><option value="transfer">Transfer</option></select>
+<input id="recoverHash" type="text" autocomplete="off" spellcheck="false" placeholder="0x… transaction hash" aria-label="Публичный transaction hash">
+<button id="recover">Восстановить и проверить через RPC</button></details>
+<p class="note">Не повторяйте операцию при ожидании подтверждения. Hash сохраняется в браузере и проекте.
+Если закрыли вкладку во время подписи, сначала проверьте историю MetaMask и восстановите hash, прежде чем повторять.</p>
+</main><script src="/signer.js"></script></html>

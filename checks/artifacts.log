@@ -1,0 +1,2 @@
+﻿PASS: 19 required artifacts, plain EVM mnemonics, bytecode, 29 vectors, local Solidity imports
+NOTE: Solidity compilation/ABI/runtime checks require real Foundry and solc

@@ -1,0 +1,32 @@
+﻿No files changed, compilation skipped
+
+Ran 5 tests for test/AverageProgram.t.sol:AverageProgramTest
+[PASS] testBadInputs() (gas: 31512)
+[PASS] testBoundariesAndOverflow() (gas: 21787)
+[PASS] testFuzzAverage(int128,int128,int128) (runs: 256, μ: 4938, ~: 4938)
+[PASS] testPositiveNegativeMixedAndFractions() (gas: 27338)
+[PASS] testSingleAndZero() (gas: 11043)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 11.39ms (15.27ms CPU time)
+
+Ran 18 tests for test/LabToken.t.sol:LabTokenTest
+[PASS] testApproveOverwriteAndTransferFrom() (gas: 244309)
+[PASS] testCustomMetadata() (gas: 14376)
+[PASS] testEmptyMetadataReverts() (gas: 4628)
+[PASS] testFuzzTransferPreservesSupply(uint128,uint128) (runs: 256, μ: 151301, ~: 154019)
+[PASS] testInfiniteAllowance() (gas: 176643)
+[PASS] testInitialState() (gas: 22906)
+[PASS] testInsufficientAllowanceReverts() (gas: 102131)
+[PASS] testInsufficientBalanceReverts() (gas: 113543)
+[PASS] testMetadata() (gas: 27797)
+[PASS] testMintOverflowReverts() (gas: 111831)
+[PASS] testMintSupplyBalanceAndEvent() (gas: 147958)
+[PASS] testSelfTransfer() (gas: 106640)
+[PASS] testTransferFromFailurePreservesAllowance() (gas: 90066)
+[PASS] testTransferOneWholeToken() (gas: 148642)
+[PASS] testUnauthorizedMintReverts() (gas: 33583)
+[PASS] testZeroAddressesRevert() (gas: 107753)
+[PASS] testZeroTransferFromWithoutAllowance() (gas: 39771)
+[PASS] testZeroValueTransferEvent() (gas: 39076)
+Suite result: ok. 18 passed; 0 failed; 0 skipped; finished in 20.16ms (59.99ms CPU time)
+
+Ran 2 test suites in 25.53ms (31.55ms CPU time): 23 tests passed, 0 failed, 0 skipped (23 total tests)

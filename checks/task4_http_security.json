@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "origin": "http://127.0.0.1:8765",
+  "checks": [
+    "Host",
+    "Origin/CSRF",
+    "CSP",
+    "no CORS",
+    "no secret file routes",
+    "no password forms",
+    "no third-party scripts",
+    "one explicit wallet send path",
+    "no approve/sign/permission methods",
+    "read-only preview does not reserve/send"
+  ],
+  "deploymentPreview": {
+    "gasEstimate": 3398446,
+    "estimatedFeeWei": "3398503773582",
+    "maximumFeeWei": "4500000000000000",
+    "estimatedAtBlock": 11969605,
+    "decoded": {
+      "network": "Ethereum Sepolia",
+      "chainId": 11155111,
+      "from": "0xfCB373793743A9bce32394EED450CEdfa7B10655",
+      "to": "CONTRACT CREATION",
+      "ETH Value": "0 ETH",
+      "name": "Vmk Rulit Token",
+      "symbol": "VMKRULIT",
+      "decimals": 18,
+      "operation": "constructor(string,string,address)"
+    }
+  }
+}

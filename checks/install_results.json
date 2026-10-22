@@ -1,0 +1,25 @@
+﻿{
+    "timestamp_utc":  "2026-10-22T11:06:50.8246752Z",
+    "sandbox_network_disabled":  false,
+    "components":  [
+                       {
+                           "component":  "foundry",
+                           "status":  "PASS",
+                           "release":  "v1.8.6",
+                           "source":  "https://github.com/foundry-rs/foundry/releases/download/v1.8.6/foundry_v1.8.6_win32_amd64.zip",
+                           "archive_sha256":  "924d6395786af438e7cb315f6835185f99d727ed6127dbbc4e6a62eb14edcfff",
+                           "versions":  {
+                                            "forge":  "forge Version: 1.8.6\nCommit SHA: 6bad0a66de7c83f7b33695044138f0f5fa4c5990\nBuild Timestamp: 2026-10-21T17:38:09.096593000Z (1792604289)\nBuild Profile: dist",
+                                            "cast":  "cast Version: 1.8.6\nCommit SHA: 6bad0a66de7c83f7b33695044138f0f5fa4c5990\nBuild Timestamp: 2026-10-21T17:38:09.096593000Z (1792604289)\nBuild Profile: dist",
+                                            "anvil":  "anvil Version: 1.8.6\nCommit SHA: 6bad0a66de7c83f7b33695044138f0f5fa4c5990\nBuild Timestamp: 2026-10-21T17:38:09.096593000Z (1792604289)\nBuild Profile: dist"
+                                        }
+                       },
+                       {
+                           "component":  "solc",
+                           "status":  "PASS",
+                           "source":  "https://binaries.soliditylang.org/windows-amd64/solc-windows-amd64-v0.8.28+commit.7893614a.exe",
+                           "sha256":  "76a71001309810aafd0462d9b2f2612bf19b89550c866140edca26e533de06bc",
+                           "version":  "solc, the solidity compiler commandline interface\nVersion: 0.8.28+commit.7893614a.Windows.msvc"
+                       }
+                   ]
+}

@@ -1,0 +1,13 @@
+﻿test_balance_read (test_sepolia_rpc.RpcTests.test_balance_read) ... ok
+test_invalid_data (test_sepolia_rpc.RpcTests.test_invalid_data) ... ok
+test_mainnet_refused (test_sepolia_rpc.RpcTests.test_mainnet_refused) ... ok
+test_noncanonical_receipt (test_sepolia_rpc.RpcTests.test_noncanonical_receipt) ... ok
+test_plan_is_read_only (test_sepolia_rpc.RpcTests.test_plan_is_read_only) ... ok
+test_receipt_and_confirmation (test_sepolia_rpc.RpcTests.test_receipt_and_confirmation) ... ok
+test_rpc_send_method_blocked (test_sepolia_rpc.RpcTests.test_rpc_send_method_blocked) ... ok
+test_unknown_receipt (test_sepolia_rpc.RpcTests.test_unknown_receipt) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

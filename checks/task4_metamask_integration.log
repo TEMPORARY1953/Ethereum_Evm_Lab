@@ -1,0 +1,4 @@
+PASS LOCAL ANVIL ONLY: deploy/mint/transfer, runtime + owner, metadata, balances,
+canonical receipts, 2 confirmations, calldata rejection, read-only RPC, idempotent report.
+PASS preview fees/decoded parameters, persistent cross-tab reservation, release ownership, mint balance at receipt block.
+No public transaction sent. No local hashes written into FINAL_REPORT.md.

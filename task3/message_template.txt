@@ -1,0 +1,3 @@
+Name: TEST1337
+Ethereum address: <YOUR_TEST_ADDRESS>
+Task 2 transaction hash: <REAL_TASK2_TX_HASH>
